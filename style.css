@@ -1,0 +1,117 @@
+﻿h1{
+    color:yellow;
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+body{
+    
+    margin: 0%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    background: linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+}
+button{
+    /* background:blue;
+    color: aliceblue;
+    padding: auto;
+    border-radius: 5px;
+    */
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+ 
+.container{
+    /* background-color: rgb(141, 131, 131);
+    height: fit-content;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    background: rgb(34, 40, 49);
+    padding: 35px;
+    border-radius: 10px;
+     */
+
+     width: 400px;
+     padding: 30px;
+     background: rgba(255, 255,255, 0.15);    /*last me it alpa used for transparency and getting glass effect */
+     backdrop-filter: blue(10px);
+     border-radius: 15px;
+     box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+     border: 1px solid rgba(255,255,255,0.2);
+
+}
+input{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+input:focus{
+ 
+    box-shadow: 0 0 10px #4910e6;
+    transition: 0.3s;
+}
+
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.toast {
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    animation: toast-in 0.3s ease;
+}
+
+.toast-success {
+    background: #2ecc71;
+}
+
+.toast-error {
+    background: #e74c3c;
+}
+
+.toast-hide {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+@keyframes toast-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
