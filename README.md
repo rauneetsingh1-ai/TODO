@@ -33,6 +33,14 @@ A secure Todo application built using HTML, CSS, JavaScript, Google Apps Script,
 - Dark Mode
 - Responsive Design
 
+- ## How to Run
+
+1. Clone the repository.
+2. Open `index.html` in your browser.
+3. Configure your Google Apps Script Web App URL in `script.js`.
+4. Deploy your Apps Script backend.
+5. Start using the application.
+
 - ## Author
 
 **Rauneet Kumar Singh**
